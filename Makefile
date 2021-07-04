@@ -1,4 +1,6 @@
 SHELL := /usr/local/bin/zsh
+build:
+	docker-compose build
 migrate:
 	docker-compose run --rm app sh -c "python manage.py migrate"
 migrations:
