@@ -1,4 +1,5 @@
 SHELL := /usr/local/bin/zsh
+all: build migrations migrate test up
 build:
 	docker-compose build
 migrate:
